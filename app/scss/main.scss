@@ -1,0 +1,122 @@
+@import './partials/reset';
+@import './partials/colors';
+@import './partials/fonts';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html,
+body {
+    font-size: 16px;
+}
+
+.navbar {
+    font-family: 'Karbon Thin', sans-serif;
+    font-size: 1.2em;
+
+
+    .nav-item {
+        margin-left: 1em;
+        position: relative;
+
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: $nav-items-border;
+            transition: all 0.4s;
+        }
+
+        &:hover,
+        &.active {
+            color: $nav-items-border;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        .nav-link {
+            color: $nav-items;
+            text-transform: uppercase;
+
+
+
+
+            &.active,
+            &:hover {
+                color: $nav-items-border;
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+    &-brand {
+        width: 420px;
+        
+        @media (max-width: 600px) {
+            width: 75%;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.intro {
+    background-image: url(../assets/images/estate-solution-intro3.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+    color: $intro-header;
+
+    &__header {
+        text-transform: uppercase;
+        padding-top: 40vh;
+        font-family: 'Karbon Bold', sans-serif;
+        font-size: 3rem;
+        
+        @media (max-width: 600px) {
+            font-size: 8vmin;
+        }
+        
+        
+
+        h2 {
+            font-size: .6em;
+            padding-top: 1em;
+        }
+        
+        .btn {
+            transition: all .35s;
+            font-family: 'Montserrat SemiBold', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.3em;
+            background: #0f7ca5;
+            border-color: #0f7ca5;
+            
+            @media (max-width: 600px) {
+                font-size: 4vmin;
+            }
+            
+            &:hover {
+                background: $logo-blue;
+                color: inherit;
+                border-color: $logo-blue;
+            }
+        }
+    }
+}

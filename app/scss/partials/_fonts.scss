@@ -1,0 +1,26 @@
+// użyta
+@font-face {
+     font-family: 'Karbon Bold';
+     src: url('../assets/fonts/Karbon-Bold.eot');
+     src: url('../assets/fonts/Raleway/Raleway-Light.ttf'),
+          url('../assets/fonts/Karbon-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../assets/fonts/Karbon-Bold.woff') format('woff'),
+     url('../assets/fonts/Karbon-Bold.ttf'),
+     url('../assets/fonts/Karbon-Bold.otf');
+}
+
+//użyta
+@font-face {
+     font-family: 'Karbon Thin';
+     src: url('../assets/fonts/Karbon-Thin.eot');
+     src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf'),
+          url('../assets/fonts/Karbon-Thin.eot?#iefix') format('embedded-opentype'),
+          url('../assets/fonts/Karbon-Thin.woff') format('woff'),
+          url('../assets/fonts/Karbon-Thin.otf');
+}
+
+// użyta
+@font-face {
+     font-family: 'Montserrat SemiBold';
+     src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
