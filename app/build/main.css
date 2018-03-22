@@ -124,3 +124,16 @@ body {
         background: #133579;
         color: inherit;
         border-color: #133579; }
+
+.about, .services, .services .h2 {
+  padding-top: 7rem; }
+  .about .h2, .services .h2 {
+    font-family: 'Karbon Bold', sans-serif;
+    padding-bottom: 1.5rem; }
+  .about p, .services p, .services .h2 p {
+    font-family: 'Karbon Thin', sans-serif;
+    line-height: 1.8;
+    margin-bottom: .7em; }
+  .about img, .services img, .services .h2 img {
+    width: 100%;
+    height: auto; }
