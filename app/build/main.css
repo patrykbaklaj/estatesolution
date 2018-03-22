@@ -108,32 +108,99 @@ body {
     .intro__header h2 {
       font-size: .6em;
       padding-top: 1em; }
-    .intro__header .btn {
-      -webkit-transition: all .35s;
-      -o-transition: all .35s;
-      transition: all .35s;
-      font-family: 'Montserrat SemiBold', sans-serif;
-      text-transform: uppercase;
-      font-size: 0.3em;
-      background: #0f7ca5;
-      border-color: #0f7ca5; }
-      @media (max-width: 600px) {
-        .intro__header .btn {
-          font-size: 4vmin; } }
-      .intro__header .btn:hover {
-        background: #133579;
-        color: inherit;
-        border-color: #133579; }
 
-.about, .services, .services .h2 {
-  padding-top: 7rem; }
-  .about .h2, .services .h2 {
+.btn {
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+  font-family: 'Montserrat SemiBold', sans-serif;
+  text-transform: uppercase;
+  font-size: .9rem;
+  background: #0f7ca5;
+  border-color: #0f7ca5; }
+  @media (max-width: 600px) {
+    .btn {
+      font-size: 4vmin; } }
+  .btn:hover {
+    background: #133579;
+    border-color: #133579;
+    color: #ffffff; }
+
+.about, .services, .contact {
+  padding: 6rem 0 5rem 0; }
+  .about h2, .services h2, .contact h2 {
     font-family: 'Karbon Bold', sans-serif;
-    padding-bottom: 1.5rem; }
-  .about p, .services p, .services .h2 p {
+    padding-bottom: .5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+    cursor: pointer; }
+    .about h2::after, .services h2::after, .contact h2::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 65px;
+      height: 2px;
+      background: #133579;
+      -webkit-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out; }
+    .about h2:hover::after, .services h2:hover::after, .contact h2:hover::after {
+      width: 110%; }
+  .about p, .services p, .contact p {
     font-family: 'Karbon Thin', sans-serif;
     line-height: 1.8;
-    margin-bottom: .7em; }
-  .about img, .services img, .services .h2 img {
+    margin-bottom: .7em;
+    font-size: 1.1em; }
+  .about img, .services img, .contact img {
     width: 100%;
     height: auto; }
+    .about img.img-fluid, .services img.img-fluid, .contact img.img-fluid {
+      -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.services {
+  background: rgba(19, 53, 121, 0.1); }
+  .services .btn {
+    font-size: .7rem; }
+  .services .card {
+    -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer; }
+    .services .card:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
+  .services .h5 {
+    font-family: 'Karbon Bold', sans-serif; }
+  .services p {
+    font-family: 'Karbon Thin', sans-serif; }
+
+.contact {
+  background: #133579;
+  color: aliceblue; }
+  .contact h2::after {
+    background: white; }
+  .contact .logo {
+    width: 80%;
+    height: auto;
+    background: white;
+    padding: 2em; }
+  .contact h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Karbon Thin', sans-serif;
+    padding-top: .8em;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s; }
+    .contact h5:hover {
+      text-shadow: 1px 1px 10px white;
+      cursor: pointer; }
+    .contact h5 a {
+      text-decoration: none;
+      color: inherit; }
