@@ -55,13 +55,13 @@ html,
 body {
   font-size: 16px; }
 
-.navbar {
+#nav {
   font-family: 'Karbon Thin', sans-serif;
   font-size: 1.2em; }
-  .navbar .nav-item {
+  #nav .nav-item {
     margin-left: 1em;
     position: relative; }
-    .navbar .nav-item::after {
+    #nav .nav-item::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -71,21 +71,21 @@ body {
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
-    .navbar .nav-item:hover, .navbar .nav-item.active {
+    #nav .nav-item:hover, #nav .nav-item.active {
       color: #ffffff; }
-      .navbar .nav-item:hover::after, .navbar .nav-item.active::after {
+      #nav .nav-item:hover::after, #nav .nav-item.active::after {
         width: 100%; }
-    .navbar .nav-item .nav-link {
+    #nav .nav-item .nav-link {
       color: #ffffff;
       text-transform: uppercase; }
-      .navbar .nav-item .nav-link.active, .navbar .nav-item .nav-link:hover {
+      #nav .nav-item .nav-link.active, #nav .nav-item .nav-link:hover {
         color: #ffffff; }
-  .navbar-brand {
+  #nav .navbar-brand {
     width: 420px; }
     @media (max-width: 600px) {
-      .navbar-brand {
+      #nav .navbar-brand {
         width: 75%; } }
-    .navbar-brand img {
+    #nav .navbar-brand img {
       width: 100%;
       height: auto; }
 
@@ -133,8 +133,9 @@ body {
     padding-bottom: .5rem;
     position: relative;
     display: inline-block;
-    margin-bottom: 3rem;
-    cursor: pointer; }
+    margin-bottom: 4rem;
+    cursor: pointer;
+    font-size: 2.5rem; }
     .about h2::after, .services h2::after, .contact h2::after {
       content: "";
       position: absolute;
@@ -194,13 +195,34 @@ body {
     color: #ffffff;
     font-size: 1.2rem;
     font-family: 'Karbon Thin', sans-serif;
-    padding-top: .8em;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s; }
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    line-height: 1.5;
+    vertical-align: middle; }
     .contact h5:hover {
       text-shadow: 1px 1px 10px white;
       cursor: pointer; }
-    .contact h5 a {
-      text-decoration: none;
-      color: inherit; }
+  .contact i {
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    cursor: pointer; }
+  .contact a {
+    color: inherit;
+    vertical-align: middle;
+    text-decoration: none; }
+  .contact .icons i {
+    padding-right: 2rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .contact .icons i:hover {
+      text-shadow: 1px 1px 10px white; }
+
+.googleMap {
+  height: 450px;
+  width: 100%; }
+  .googleMap #map {
+    height: 100%;
+    width: 100%; }

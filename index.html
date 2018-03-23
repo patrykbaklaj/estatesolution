@@ -22,7 +22,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="navbar__wraper container">
       <a class="navbar-brand" href="#">
         <img src="./app/assets/images/estatesolution-logo-small.png" alt="" class="img-fluid">
@@ -38,6 +38,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">O nas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Zespół</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usługi</a>
@@ -140,22 +143,48 @@
     <div class="container">
       <h2 class="h2">Kontakt</h2>
       <div class="row">
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-8">
           <img class="logo" src="app/assets/images/estatesolution-logo-small.png" alt="EState Solution Logo">
-          <h5>Estate Solution sp. z o. o.</h5>
-          <h5>ul. Dmowskiego 124/6</h5>
-          <h5>61-124 Poznań</h5>
-          <h5><a href="tel: 1234567">tel: 1234567</a></h5>
-          <h5><a href="mailto:biuro@estatesolution.pl">biuro@estatesolution.pl</a></h5>
+          <h5 class="mb-3 mt-3">Estate Solution sp. z o. o.</h5>
+          <h5 class="mb-3">ul. Dmowskiego 124/6</h5>
+          <h5 class="mb-3">61-124 Poznań</h5>
         </div>
-        <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
-          <img class="img-fluid" src="app/assets/images/contact-1.jpg" alt="Kontakt z firmą EState Solution">
+        <div class="col-12 col-md-4">
+          <h5 class="h5">Telefon</h5>
+          <h5 class="mb-4">
+            <i class="fas fa-phone-square"></i>
+            <a href="tel: 1234567">1234567</a>
+          </h5>
+          <h5 class="h5">Email</h5>
+          <h5 class="mb-4">
+            <i class="far fa-envelope"></i>
+            <a href="mailto:biuro@estatesolution.pl">biuro@estatesolution.pl</a>
+          </h5>
+          <h5 class="h5">Serwisy społecznościowe</h5>
+          <div class="icons">
+            <!--           <i class="fab fa-facebook-f"></i>-->
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-google-plus-square"></i></a>
+            <!--            <i class="fab fa-google-plus-g"></i>-->
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
 
+  </section>
+  <section class="googleMap">
+    <div id="map">
+
+    </div>
+  </section>
   <script src="./app/build/out.js"></script>
+
+  <!-- google Maps Scripts -->
+  <script src="app/js/map.js"></script>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACndxwwq5VzzTYQTqYXE85JNZnx55TAHo&callback=initMap" async defer></script>
+
 
 </body>
 

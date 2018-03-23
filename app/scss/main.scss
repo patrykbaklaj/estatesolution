@@ -8,7 +8,7 @@ body {
     font-size: 16px;
 }
 
-.navbar {
+#nav {
     font-family: 'Karbon Thin', sans-serif;
     font-size: 1.2em;
 
@@ -31,7 +31,7 @@ body {
 
         &:hover,
         &.active {
-            color: $nav-items-border;
+            color: $nav-items;
 
             &::after {
                 width: 100%;
@@ -59,7 +59,7 @@ body {
 
 
 
-    &-brand {
+    .navbar-brand {
         width: 420px;
 
         @media (max-width: 600px) {
@@ -132,9 +132,10 @@ body {
         padding-bottom: .5rem;
         position: relative;
         display: inline-block;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         cursor: pointer;
-        
+        font-size: 2.5rem;
+
         &::after {
             content: "";
             position: absolute;
@@ -223,18 +224,52 @@ body {
         color: $contact-text;
         font-size: 1.2rem;
         font-family: 'Karbon Thin', sans-serif;
-        padding-top: .8em;
-        transition: all .4s;
+        transition: all .3s;
+        line-height: 1.5;
+        vertical-align: middle;
 
         &:hover {
             text-shadow: 1px 1px 10px white;
             cursor: pointer;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
+
+    }
+
+    i {
+        font-size: 1.6rem;
+        vertical-align: middle;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    a {
+        color: inherit;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+    .icons {
+
+        i {
+            padding-right: 2rem;
+            transition: all .3s;
+
+
+            &:hover {
+                text-shadow: 1px 1px 10px white;
+            }
         }
     }
 
+}
+
+.googleMap {
+    height: 450px;
+    width: 100%;
+    
+    #map {
+        height: 100%;
+        width: 100%;
+    }
 }
