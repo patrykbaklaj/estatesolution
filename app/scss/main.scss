@@ -261,15 +261,53 @@ body {
             }
         }
     }
-
 }
 
 .googleMap {
     height: 450px;
     width: 100%;
-    
+
     #map {
         height: 100%;
         width: 100%;
+    }
+}
+
+
+@keyframes bounce {
+    0%,
+    10% {
+        transform: translateY(0);
+    }
+    5% {
+        transform: translateY(-5px);
+    }
+
+    90%,
+    100% {
+        transform: translateY(0);
+    }
+    95% {
+        transform: translateY(-5px);
+    }
+}
+
+.footer {
+    height: 50px;
+    background: $footer-background;
+    font-family: 'Karbon Thin', sans-serif;
+    font-size: .8em;
+
+    p,
+    i {
+        vertical-align: middle;
+        line-height: 50px;
+        color: $footer-color;
+    }
+
+    i {
+        font-size: 2rem;
+        animation: bounce 4s alternate infinite;
+        animation-delay: 2s;
     }
 }

@@ -226,3 +226,52 @@ body {
   .googleMap #map {
     height: 100%;
     width: 100%; }
+
+@-webkit-keyframes bounce {
+  0%,
+  10% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  5% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  90%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  95% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+
+@keyframes bounce {
+  0%,
+  10% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  5% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  90%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  95% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+
+.footer {
+  height: 50px;
+  background: #071a2d;
+  font-family: 'Karbon Thin', sans-serif;
+  font-size: .8em; }
+  .footer p,
+  .footer i {
+    vertical-align: middle;
+    line-height: 50px;
+    color: #ffffff; }
+  .footer i {
+    font-size: 2rem;
+    -webkit-animation: bounce 4s alternate infinite;
+    animation: bounce 4s alternate infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s; }
