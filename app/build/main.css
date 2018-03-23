@@ -171,7 +171,8 @@ body {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    cursor: pointer; }
+    cursor: pointer;
+    display: block !important; }
     .services .card:hover {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
