@@ -46,6 +46,12 @@ body {
         .nav-link {
             color: $nav-items;
             text-transform: uppercase;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 14px;
+            }
 
 
             &.active,
@@ -71,6 +77,8 @@ body {
 
     &.nav-white {
         background: $nav-white-background;
+
+
 
         .nav-item {
 
@@ -106,7 +114,7 @@ body {
         font-family: 'Karbon Bold', sans-serif;
         font-size: 3rem;
 
-        @media (max-width: 600px) {
+        @media (max-width: 1000px) {
             font-size: 8vmin;
         }
 

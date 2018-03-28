@@ -14,6 +14,12 @@ $(document).ready(function () {
             $('#nav').removeClass('nav-white');
             $('#nav').removeClass('box-shadow');
         };
+    });
+    
+    $('#arrow-top').on('click', () => {
+        $('body, html').stop().animate({
+            scrollTop: $('body').offset().top
+        }, 1100)
     })
 
 });

@@ -85,7 +85,11 @@ body {
         width: 100%; }
     #nav .nav-item .nav-link {
       color: #ffffff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      position: relative; }
+      #nav .nav-item .nav-link::after {
+        position: absolute;
+        top: 14px; }
       #nav .nav-item .nav-link.active, #nav .nav-item .nav-link:hover {
         color: #ffffff; }
   #nav .navbar-brand {
@@ -118,7 +122,7 @@ body {
     padding-top: 40vh;
     font-family: 'Karbon Bold', sans-serif;
     font-size: 3rem; }
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       .intro__header {
         font-size: 8vmin; } }
     .intro__header h2 {
