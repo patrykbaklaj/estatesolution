@@ -53,11 +53,19 @@ table {
 
 html,
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  position: relative; }
+
+.box-shadow {
+  -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 #nav {
   font-family: 'Karbon Thin', sans-serif;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease; }
   #nav .nav-item {
     margin-left: 1em;
     position: relative; }
@@ -88,6 +96,14 @@ body {
     #nav .navbar-brand img {
       width: 100%;
       height: auto; }
+  #nav.nav-white {
+    background: #ffffff; }
+    #nav.nav-white .nav-item .nav-link {
+      color: #1d1d1b; }
+      #nav.nav-white .nav-item .nav-link.active, #nav.nav-white .nav-item .nav-link:hover {
+        color: #1d1d1b; }
+    #nav.nav-white .nav-item::after {
+      background: #1d1d1b; }
 
 .intro {
   background-image: url(2534d2f3f47a70f565352c02fc7ca3ee.jpg);

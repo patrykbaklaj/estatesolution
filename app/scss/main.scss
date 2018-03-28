@@ -6,12 +6,17 @@
 html,
 body {
     font-size: 16px;
+    position: relative;
+}
+
+.box-shadow {
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #nav {
     font-family: 'Karbon Thin', sans-serif;
     font-size: 1.2em;
-
+    transition: all .4s ease;
 
     .nav-item {
         margin-left: 1em;
@@ -43,20 +48,12 @@ body {
             text-transform: uppercase;
 
 
-
-
             &.active,
             &:hover {
-                color: $nav-items-border;
-
+                color: $nav-items;
             }
         }
     }
-
-
-
-
-
 
 
     .navbar-brand {
@@ -69,6 +66,26 @@ body {
         img {
             width: 100%;
             height: auto;
+        }
+    }
+
+    &.nav-white {
+        background: $nav-white-background;
+
+        .nav-item {
+
+            .nav-link {
+                color: $nav-white-items;
+
+                &.active,
+                &:hover {
+                    color: $nav-white-items;
+                }
+            }
+
+            &::after {
+                background: $nav-items-white-border;
+            }
         }
     }
 }
