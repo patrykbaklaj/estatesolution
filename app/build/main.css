@@ -60,6 +60,9 @@ body {
   -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.text-shadow {
+  text-shadow: 1px 1px 6px darkgrey; }
+
 #nav {
   font-family: 'Karbon Thin', sans-serif;
   font-size: 1.2em;
@@ -100,6 +103,8 @@ body {
     #nav .navbar-brand img {
       width: 100%;
       height: auto; }
+  #nav .navbar-toggler {
+    background: rgba(255, 255, 255, 0.8); }
   #nav.nav-white {
     background: #ffffff; }
     #nav.nav-white .nav-item .nav-link {
@@ -108,6 +113,15 @@ body {
         color: #1d1d1b; }
     #nav.nav-white .nav-item::after {
       background: #1d1d1b; }
+  @media screen and (orientation: landscape) and (max-width: 1000px) {
+    #nav {
+      background: #ffffff; }
+      #nav .nav-item .nav-link {
+        color: #1d1d1b; }
+        #nav .nav-item .nav-link.active, #nav .nav-item .nav-link:hover {
+          color: #1d1d1b; }
+      #nav .nav-item::after {
+        background: #1d1d1b; } }
 
 .intro {
   background-image: url(2534d2f3f47a70f565352c02fc7ca3ee.jpg);
@@ -115,16 +129,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
-  color: #ffffff; }
+  height: 100vh;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (max-height: 600px) {
+    .intro {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; } }
   .intro__header {
     text-transform: uppercase;
-    padding-top: 40vh;
     font-family: 'Karbon Bold', sans-serif;
     font-size: 3rem; }
     @media (max-width: 1000px) {
       .intro__header {
         font-size: 8vmin; } }
+    @media (max-height: 600px) {
+      .intro__header {
+        padding-bottom: 2rem; } }
     .intro__header h2 {
       font-size: .6em;
       padding-top: 1em; }
@@ -177,22 +204,17 @@ body {
   .about img, .services img, .contact img {
     width: 100%;
     height: auto; }
-    .about img.img-fluid, .services img.img-fluid, .contact img.img-fluid {
-      -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .services {
   background: rgba(19, 53, 121, 0.1); }
   .services .btn {
     font-size: .7rem; }
   .services .card {
-    -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    display: block !important;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    display: block !important; }
+    transition: all .3s ease-in-out; }
     .services .card:hover {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);

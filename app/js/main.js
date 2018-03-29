@@ -1,5 +1,3 @@
-
-
 import 'bootstrap';
 import Popper from "popper.js/dist/popper-utils.js";
 
@@ -7,7 +5,7 @@ import Popper from "popper.js/dist/popper-utils.js";
 $(document).ready(function () {
 
     $(window).on('scroll', () => {
-        if($(window).scrollTop() >= 100) {
+        if ($(window).scrollTop() >= 100) {
             $('#nav').addClass('nav-white');
             $('#nav').addClass('box-shadow');
         } else {
@@ -15,7 +13,7 @@ $(document).ready(function () {
             $('#nav').removeClass('box-shadow');
         };
     });
-    
+
     $('#arrow-top').on('click', () => {
         $('body, html').stop().animate({
             scrollTop: $('body').offset().top

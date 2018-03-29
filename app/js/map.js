@@ -161,7 +161,7 @@
       ];
    
    
-   
+   var iconUrl = './app/assets/icons/marker.png';
    var uluru = {
      lat: 52.382111,
      lng: 16.891347
@@ -174,6 +174,7 @@
    var marker = new google.maps.Marker({
      position: uluru,
      map: map,
+     icon: iconUrl,
      animation: google.maps.Animation.DROP
    });
    marker.addListener('click', toggleBounce);
