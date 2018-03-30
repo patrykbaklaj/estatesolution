@@ -12,7 +12,7 @@ $(document).ready(function () {
         } else {
             $('#nav').removeClass('nav-white');
             $('#nav').removeClass('box-shadow');
-            if (window.location.pathname == '/kontakt.html') {
+            if (window.location.pathname == '/estatesolution/kontakt.html') {
 
                 $('#nav .navbar-brand img').attr('src', './app/assets/images/estatesolution-logo-small-white.png');
             }
