@@ -123,7 +123,7 @@ body {
       #nav .nav-item::after {
         background: #1d1d1b; } }
 
-.intro {
+.intro, .contact__intro {
   background-image: url(2534d2f3f47a70f565352c02fc7ca3ee.jpg);
   background-position: center top;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   @media (max-height: 600px) {
-    .intro {
+    .intro, .contact__intro {
       -webkit-box-align: end;
       -ms-flex-align: end;
       align-items: flex-end; } }
@@ -318,3 +318,42 @@ body {
     animation: bounce 4s alternate infinite;
     -webkit-animation-delay: 2s;
     animation-delay: 2s; }
+
+.contact__intro {
+  background-image: url(87d531ccd25679d9e5f0e9008f01414e.jpg);
+  height: 500px;
+  position: relative; }
+  .contact__intro .arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: -27px;
+    font-size: 34px;
+    margin-left: -20px;
+    color: #133579;
+    padding: 2rem;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer; }
+    .contact__intro .arrow-down i {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+    .contact__intro .arrow-down:hover i {
+      -webkit-transform: scale(1.6);
+      -ms-transform: scale(1.6);
+      transform: scale(1.6);
+      color: #0f7ca5; }
+  .contact__intro h2 {
+    padding-top: 4em;
+    word-spacing: 7px; }

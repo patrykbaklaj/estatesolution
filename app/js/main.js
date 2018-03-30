@@ -8,9 +8,14 @@ $(document).ready(function () {
         if ($(window).scrollTop() >= 100) {
             $('#nav').addClass('nav-white');
             $('#nav').addClass('box-shadow');
+            $('#nav .navbar-brand img').attr('src', './app/assets/images/estatesolution-logo-small.png');
         } else {
             $('#nav').removeClass('nav-white');
             $('#nav').removeClass('box-shadow');
+            if (window.location.pathname == '/kontakt.html') {
+
+                $('#nav .navbar-brand img').attr('src', './app/assets/images/estatesolution-logo-small-white.png');
+            }
         };
     });
 

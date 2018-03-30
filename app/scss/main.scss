@@ -105,7 +105,7 @@ body {
         }
     }
 
-    @media screen and (orientation:landscape) and (max-width: 1000px){
+    @media screen and (orientation:landscape) and (max-width: 1000px) {
         background: $nav-white-background;
 
         .nav-item {
@@ -367,5 +367,47 @@ body {
         font-size: 2rem;
         animation: bounce 4s alternate infinite;
         animation-delay: 2s;
+    }
+}
+
+.contact__intro {
+    @extend .intro;
+
+    background-image: url('../assets/images/contact-4.jpg');
+    height: 500px;
+    position: relative;
+
+    .arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: -27px;
+        font-size: 34px;
+        margin-left: -20px;
+        color: $logo-blue;
+        padding: 2rem;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        i {
+            transition: all .3s;
+        }
+
+        &:hover {
+            i {
+                transform: scale(1.6);
+                color: $btn-background;
+            }
+        }
+    }
+
+    h2 {
+        padding-top: 4em;
+        word-spacing: 7px;
     }
 }
