@@ -225,17 +225,15 @@ body {
     font-family: 'Karbon Thin', sans-serif; }
 
 .contact {
-  background: #133579;
-  color: aliceblue; }
-  .contact h2::after {
-    background: white; }
+  background: #ffffff;
+  color: #212529; }
   .contact .logo {
     width: 80%;
     height: auto;
     background: white;
-    padding: 2em; }
+    padding: 1em 0 1em 0; }
   .contact h5 {
-    color: #ffffff;
+    color: #212529;
     font-size: 1.2rem;
     font-family: 'Karbon Thin', sans-serif;
     -webkit-transition: all .3s;
@@ -323,10 +321,21 @@ body {
   background-image: url(87d531ccd25679d9e5f0e9008f01414e.jpg);
   height: 500px;
   position: relative;
-  max-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  max-height: 100vh; }
+  @media screen and (orientation: landscape) {
+    .contact__intro {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .contact__intro h2 {
+        padding: 2rem; } }
   .contact__intro .arrow-down {
     position: absolute;
     left: 50%;

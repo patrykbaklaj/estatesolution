@@ -261,12 +261,12 @@ body {
 .contact {
     @extend .about;
 
-    background: $logo-blue;
-    color: aliceblue;
+    background: $contact-background;
+    color: $contact-text;
 
     h2 {
         &::after {
-            background: white;
+//            background: white;
         }
     }
 
@@ -274,7 +274,7 @@ body {
         width: 80%;
         height: auto;
         background: white;
-        padding: 2em;
+        padding: 1em 0 1em 0;
     }
 
     h5 {
@@ -377,8 +377,16 @@ body {
     height: 500px;
     position: relative;
     max-height: 100vh;
-    display: flex;
-    
+
+    @media screen and (orientation: landscape) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h2 {
+            padding: 2rem;
+        }
+    }
+
 
     .arrow-down {
         position: absolute;
@@ -396,7 +404,7 @@ body {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        
+
         i {
             transition: all .3s;
         }
