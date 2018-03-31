@@ -322,7 +322,11 @@ body {
 .contact__intro {
   background-image: url(87d531ccd25679d9e5f0e9008f01414e.jpg);
   height: 500px;
-  position: relative; }
+  position: relative;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .contact__intro .arrow-down {
     position: absolute;
     left: 50%;
@@ -355,5 +359,5 @@ body {
       transform: scale(1.6);
       color: #0f7ca5; }
   .contact__intro h2 {
-    padding-top: 4em;
+    padding-top: 1em;
     word-spacing: 7px; }

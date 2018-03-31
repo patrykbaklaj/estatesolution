@@ -105,7 +105,7 @@ body {
         }
     }
 
-    @media screen and (orientation:landscape) and (max-width: 1000px) {
+    @media screen and (orientation: landscape) and (max-width: 1000px) {
         background: $nav-white-background;
 
         .nav-item {
@@ -376,6 +376,9 @@ body {
     background-image: url('../assets/images/contact-4.jpg');
     height: 500px;
     position: relative;
+    max-height: 100vh;
+    display: flex;
+    
 
     .arrow-down {
         position: absolute;
@@ -407,7 +410,7 @@ body {
     }
 
     h2 {
-        padding-top: 4em;
+        padding-top: 1em;
         word-spacing: 7px;
     }
 }
