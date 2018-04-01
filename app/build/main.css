@@ -228,10 +228,12 @@ body {
   background: #ffffff;
   color: #212529; }
   .contact .logo, .contact__info .logo {
-    width: 80%;
+    width: 60%;
     height: auto;
     background: white;
     padding: 1em 0 1em 0; }
+  .contact .h5, .contact__info .h5 {
+    font-weight: bold; }
   .contact h5, .contact__info h5 {
     color: #212529;
     font-size: 1.2rem;
@@ -371,6 +373,15 @@ body {
     padding-top: 1em;
     word-spacing: 7px; }
 
+.contact__intro .intro__header h2 {
+  font-size: 1em;
+  text-transform: lowercase; }
+  .contact__intro .intro__header h2::first-letter {
+    text-transform: uppercase; }
+  @media (max-width: 1000px) {
+    .contact__intro .intro__header h2 {
+      font-size: 6vmin; } }
+
 .contact__info .h2,
 .contact__info .h3 {
   padding-bottom: 1rem;
@@ -392,8 +403,9 @@ body {
       width: 100%; } }
 
 .contact__info .h3 {
+  font-size: 1.5em;
   margin-top: 2rem;
   font-family: 'Karbon Bold', sans-serif;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 4rem; }
   .contact__info .h3 strong {
     font-weight: bold; }

@@ -271,10 +271,14 @@ body {
     }
 
     .logo {
-        width: 80%;
+        width: 60%;
         height: auto;
         background: white;
         padding: 1em 0 1em 0;
+    }
+
+    .h5 {
+        font-weight: bold;
     }
 
     h5 {
@@ -423,6 +427,26 @@ body {
     }
 }
 
+.contact__intro {
+
+
+
+    .intro__header {
+        h2 {
+            font-size: 1em;
+            text-transform: lowercase;
+            
+            &::first-letter {
+                text-transform: uppercase;
+            }
+
+            @media (max-width: 1000px) {
+                font-size: 6vmin;
+            }
+        }
+    }
+}
+
 .contact__info {
     @extend .contact;
 
@@ -435,6 +459,7 @@ body {
     }
 
     .h2 {
+
         &::after {
             left: 50%;
             margin-left: -32.5px;
@@ -457,10 +482,11 @@ body {
     }
 
     .h3 {
+        font-size: 1.5em;
         margin-top: 2rem;
         font-family: 'Karbon Bold', sans-serif;
-        margin-bottom: 3.5rem;
-        
+        margin-bottom: 4rem;
+
         strong {
             font-weight: bold;
         }

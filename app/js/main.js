@@ -4,6 +4,7 @@ import Popper from "popper.js/dist/popper-utils.js";
 
 $(document).ready(function () {
 
+    // handle menu
     $(window).on('scroll', () => {
         if ($(window).scrollTop() >= 100) {
             $('#nav').addClass('nav-white');
@@ -19,10 +20,19 @@ $(document).ready(function () {
         };
     });
 
+    // handle arrow TOP
     $('#arrow-top').on('click', () => {
         $('body, html').stop().animate({
             scrollTop: $('body').offset().top
         }, 1100)
     })
+
+    //handle arrow Contact
+    $('.arrow-down').on('click', () => {
+        console.log("first");
+        $('body, html').stop().animate({
+            scrollTop: $('.to-scroll').offset().top - 100
+        }, 700)
+    });
 
 });
