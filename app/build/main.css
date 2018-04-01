@@ -409,3 +409,22 @@ body {
   margin-bottom: 4rem; }
   .contact__info .h3 strong {
     font-weight: bold; }
+
+.contact__form {
+  margin-bottom: 4rem; }
+  .contact__form .btn {
+    background: #133579; }
+    .contact__form .btn:hover {
+      background: #0f7ca5; }
+  .contact__form .form-group {
+    position: relative; }
+    .contact__form .form-group .form-control {
+      padding-left: 43px; }
+    .contact__form .form-group .icon {
+      position: absolute;
+      color: #495057;
+      z-index: 10;
+      top: 0;
+      font-size: 1.2rem;
+      margin-top: 8px;
+      margin-left: 15px; }

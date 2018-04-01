@@ -435,7 +435,7 @@ body {
         h2 {
             font-size: 1em;
             text-transform: lowercase;
-            
+
             &::first-letter {
                 text-transform: uppercase;
             }
@@ -489,6 +489,37 @@ body {
 
         strong {
             font-weight: bold;
+        }
+    }
+}
+
+.contact__form {
+    margin-bottom: 4rem;
+
+    .btn {
+        background: $logo-blue;
+
+        &:hover {
+            background: $btn-background;
+        }
+    }
+
+
+    .form-group {
+        position: relative;
+        
+        .form-control {
+            padding-left: 43px;
+        }
+
+        .icon {
+            position: absolute;
+            color: #495057;
+            z-index: 10;
+            top: 0;
+            font-size: 1.2rem;
+            margin-top: 8px;
+            margin-left: 15px;
         }
     }
 }

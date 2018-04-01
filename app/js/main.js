@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('.arrow-down').on('click', () => {
         console.log("first");
         $('body, html').stop().animate({
-            scrollTop: $('.to-scroll').offset().top - 100
+            scrollTop: $('.to-scroll').offset().top - 120
         }, 700)
     });
 

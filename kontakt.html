@@ -73,10 +73,38 @@
       <div class="arrow-down box-shadow"><i class="fas fa-angle-down"></i></div>
     </section>
 
+
+
     <section class="contact__info" id="contact">
       <div class="container">
         <h2 class="h2 to-scroll">Kontakt z biurem</h2>
         <h3 class="h3">Chcesz dowiedzieć się więcej o naszych usługach? Jesteś zainteresowany wyceną nieruchomości? <strong>Zadzwoń</strong> do nas, wypełnij poniższy <strong>formularz</strong> lub wyślij nam <strong>wiadomość</strong>.</h3>
+        
+
+        <form class="contact__form row">
+          <div class="form-group col-12 col-md-4">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Imię">
+            <i class="fas fa-user icon"></i>
+          </div>
+          <div class="form-group col-12 col-md-4">
+            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
+            <i class="far fa-envelope icon"></i>
+          </div>
+          <div class="form-group col-12 col-md-4">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Telefon">
+            <i class="fas fa-phone icon"></i>
+          </div>
+          <div class="form-group col-sm-12">
+            <textarea class="form-control col-12" rows="4" placeholder="Wiadomość"></textarea>
+            <i class="fas fa-comment icon"></i>
+          </div>
+          <div class="form-group col-12 col-md-4 offset-md-8">
+            <input type="submit" class="form-control btn btn-primary btn-sm">
+          </div>
+        </form>
+
+
+        
         <div class="row">
           <div class="col-12 col-md-8">
             <img class="logo" src="app/assets/images/estatesolution-logo-small.png" alt="EState Solution Logo">
@@ -113,6 +141,8 @@
       <div id="map"></div>
     </section>
 
+
+
   </main>
   <footer class="footer">
     <div class="container d-flex justify-content-between">
@@ -131,6 +161,8 @@
   <script src="app/js/map.js"></script>
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACndxwwq5VzzTYQTqYXE85JNZnx55TAHo&callback=initMap" async defer></script>
+
+
 
 
 </body>
