@@ -14,9 +14,10 @@
   <!--  Main Stylesheet  -->
   <link rel="stylesheet" href="app/build/main.css">
 
-  <meta name="description" content="Estate Solution. Rzeczoznawcy majątkowi Poznań. W naszej ofercie kompleksowa wycena nieruchomości. Tworzymy profesjonalne operaty szacunkowe.">
+  
+  <meta name="robots" content="noindex, nofollow">
 
-  <title>ESTATE SOLUTION - Rzeczoznawcy majątkowi Poznań.</title>
+  <title>Kontakt - ESTATE SOLUTION</title>
 
 </head>
 
@@ -77,34 +78,10 @@
 
     <section class="contact__info" id="contact">
       <div class="container">
+
         <h2 class="h2 to-scroll">Kontakt z biurem</h2>
         <h3 class="h3">Chcesz dowiedzieć się więcej o naszych usługach? Jesteś zainteresowany wyceną nieruchomości? <strong>Zadzwoń</strong> do nas, wypełnij poniższy <strong>formularz</strong> lub wyślij nam <strong>wiadomość</strong>.</h3>
-        
 
-        <form class="contact__form row">
-          <div class="form-group col-12 col-md-4">
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Imię">
-            <i class="fas fa-user icon"></i>
-          </div>
-          <div class="form-group col-12 col-md-4">
-            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
-            <i class="far fa-envelope icon"></i>
-          </div>
-          <div class="form-group col-12 col-md-4">
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Telefon">
-            <i class="fas fa-phone icon"></i>
-          </div>
-          <div class="form-group col-sm-12">
-            <textarea class="form-control col-12" rows="4" placeholder="Wiadomość"></textarea>
-            <i class="fas fa-comment icon"></i>
-          </div>
-          <div class="form-group col-12 col-md-4 offset-md-8">
-            <input type="submit" class="form-control btn btn-primary btn-sm">
-          </div>
-        </form>
-
-
-        
         <div class="row">
           <div class="col-12 col-md-8">
             <img class="logo" src="app/assets/images/estatesolution-logo-small.png" alt="EState Solution Logo">
@@ -130,9 +107,30 @@
               <a href=""><i class="fab fa-google-plus-square"></i></a>
               <!--            <i class="fab fa-google-plus-g"></i>-->
             </div>
-
           </div>
         </div>
+
+        <form class="contact__form row" action="mailto:patrykbaklaj@gmail.com" method="GET" enctype="text/plain">
+          <div class="form-group col-12 col-md-4">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Imię" name="name">
+            <i class="fas fa-user icon"></i>
+          </div>
+          <div class="form-group col-12 col-md-4">
+            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email" name="cc">
+            <i class="fas fa-envelope icon"></i>
+          </div>
+          <div class="form-group col-12 col-md-4">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Telefon" name="body">
+            <i class="fas fa-phone icon"></i>
+          </div>
+          <div class="form-group col-sm-12">
+            <textarea class="form-control col-12" rows="4" placeholder="Wiadomość" name="body"></textarea>
+            <i class="fas fa-comment icon"></i>
+          </div>
+          <div class="form-group col-12 col-md-4 offset-md-8">
+            <input type="submit" class="form-control btn btn-primary btn-sm" name="submit">
+          </div>
+        </form>
       </div>
 
     </section>

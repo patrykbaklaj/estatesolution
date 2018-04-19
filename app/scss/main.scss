@@ -7,7 +7,12 @@ html,
 body {
     font-size: 16px;
     position: relative;
+    
+    strong {
+        font-weight: bold;
+    }
 }
+
 
 .box-shadow {
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -494,7 +499,7 @@ body {
 }
 
 .contact__form {
-    margin-bottom: 4rem;
+    margin: 4rem 0 0 0;
 
     .btn {
         background: $logo-blue;
@@ -507,6 +512,7 @@ body {
 
     .form-group {
         position: relative;
+        font-family: 'Karbon Thin', sans-serif;
         
         .form-control {
             padding-left: 43px;
@@ -518,7 +524,7 @@ body {
             z-index: 10;
             top: 0;
             font-size: 1.2rem;
-            margin-top: 8px;
+            margin-top: 9px;
             margin-left: 15px;
         }
     }

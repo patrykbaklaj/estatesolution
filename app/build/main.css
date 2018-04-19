@@ -55,6 +55,9 @@ html,
 body {
   font-size: 16px;
   position: relative; }
+  html strong,
+  body strong {
+    font-weight: bold; }
 
 .box-shadow {
   -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -411,13 +414,14 @@ body {
     font-weight: bold; }
 
 .contact__form {
-  margin-bottom: 4rem; }
+  margin: 4rem 0 0 0; }
   .contact__form .btn {
     background: #133579; }
     .contact__form .btn:hover {
       background: #0f7ca5; }
   .contact__form .form-group {
-    position: relative; }
+    position: relative;
+    font-family: 'Karbon Thin', sans-serif; }
     .contact__form .form-group .form-control {
       padding-left: 43px; }
     .contact__form .form-group .icon {
@@ -426,5 +430,5 @@ body {
       z-index: 10;
       top: 0;
       font-size: 1.2rem;
-      margin-top: 8px;
+      margin-top: 9px;
       margin-left: 15px; }
