@@ -384,7 +384,8 @@ body {
 }
 
 .contact__intro,
-.ceo__intro {
+.ceo__intro,
+.aboutus__intro {
     @extend .intro;
 
     background-image: url('../assets/images/contact-4-70.jpg');
@@ -438,9 +439,8 @@ body {
 }
 
 .contact__intro,
-.ceo__intro {
-
-
+.ceo__intro,
+.aboutus__intro {
 
     .intro__header {
         h2 {
@@ -459,7 +459,8 @@ body {
 }
 
 .contact__info,
-.ceo__info {
+.ceo__info,
+.aboutus__info {
     @extend .contact;
 
     .h2,
@@ -544,7 +545,18 @@ body {
 .ceo__info {
 
     .ceo__photo {
-        width: 60%;
+        width: 50%;
         height: auto;
+    }
+}
+
+.aboutus__intro {
+    background-image: url(../assets/images/zarzad-50.jpg);
+}
+
+.aboutus__info {
+    
+    .h3 {
+        margin-bottom: 1em;
     }
 }
