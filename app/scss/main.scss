@@ -7,9 +7,13 @@ html,
 body {
     font-size: 16px;
     position: relative;
-    
+
     strong {
         font-weight: bold;
+    }
+
+    hr {
+        width: 100%;
     }
 }
 
@@ -379,7 +383,8 @@ body {
     }
 }
 
-.contact__intro {
+.contact__intro,
+.ceo__intro {
     @extend .intro;
 
     background-image: url('../assets/images/contact-4-70.jpg');
@@ -432,7 +437,8 @@ body {
     }
 }
 
-.contact__intro {
+.contact__intro,
+.ceo__intro {
 
 
 
@@ -452,7 +458,8 @@ body {
     }
 }
 
-.contact__info {
+.contact__info,
+.ceo__info {
     @extend .contact;
 
     .h2,
@@ -513,7 +520,7 @@ body {
     .form-group {
         position: relative;
         font-family: 'Karbon Thin', sans-serif;
-        
+
         .form-control {
             padding-left: 43px;
         }
@@ -527,5 +534,17 @@ body {
             margin-top: 9px;
             margin-left: 15px;
         }
+    }
+}
+
+.ceo__intro {
+    background-image: url(../assets/images/zarzad-50.jpg);
+}
+
+.ceo__info {
+
+    .ceo__photo {
+        width: 60%;
+        height: auto;
     }
 }

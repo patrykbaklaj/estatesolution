@@ -58,6 +58,9 @@ body {
   html strong,
   body strong {
     font-weight: bold; }
+  html hr,
+  body hr {
+    width: 100%; }
 
 .box-shadow {
   -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -126,7 +129,8 @@ body {
       #nav .nav-item::after {
         background: #1d1d1b; } }
 
-.intro, .contact__intro {
+.intro, .contact__intro,
+.ceo__intro {
   background-image: url(2534d2f3f47a70f565352c02fc7ca3ee.jpg);
   background-position: center top;
   background-repeat: no-repeat;
@@ -141,7 +145,8 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   @media (max-height: 600px) {
-    .intro, .contact__intro {
+    .intro, .contact__intro,
+    .ceo__intro {
       -webkit-box-align: end;
       -ms-flex-align: end;
       align-items: flex-end; } }
@@ -176,9 +181,11 @@ body {
     border-color: #133579;
     color: #ffffff; }
 
-.about, .services, .contact, .contact__info {
+.about, .services, .contact, .contact__info,
+.ceo__info {
   padding: 6rem 0 5rem 0; }
-  .about h2, .services h2, .contact h2, .contact__info h2 {
+  .about h2, .services h2, .contact h2, .contact__info h2,
+  .ceo__info h2 {
     font-family: 'Karbon Bold', sans-serif;
     padding-bottom: .5rem;
     position: relative;
@@ -186,7 +193,8 @@ body {
     margin-bottom: 4rem;
     cursor: pointer;
     font-size: 2.5rem; }
-    .about h2::after, .services h2::after, .contact h2::after, .contact__info h2::after {
+    .about h2::after, .services h2::after, .contact h2::after, .contact__info h2::after,
+    .ceo__info h2::after {
       content: "";
       position: absolute;
       bottom: -8px;
@@ -197,14 +205,17 @@ body {
       -webkit-transition: all .5s ease-in-out;
       -o-transition: all .5s ease-in-out;
       transition: all .5s ease-in-out; }
-    .about h2:hover::after, .services h2:hover::after, .contact h2:hover::after, .contact__info h2:hover::after {
+    .about h2:hover::after, .services h2:hover::after, .contact h2:hover::after, .contact__info h2:hover::after,
+    .ceo__info h2:hover::after {
       width: 110%; }
-  .about p, .services p, .contact p, .contact__info p {
+  .about p, .services p, .contact p, .contact__info p,
+  .ceo__info p {
     font-family: 'Karbon Thin', sans-serif;
     line-height: 1.8;
     margin-bottom: .7em;
     font-size: 1.1em; }
-  .about img, .services img, .contact img, .contact__info img {
+  .about img, .services img, .contact img, .contact__info img,
+  .ceo__info img {
     width: 100%;
     height: auto; }
 
@@ -227,18 +238,22 @@ body {
   .services p {
     font-family: 'Karbon Thin', sans-serif; }
 
-.contact, .contact__info {
+.contact, .contact__info,
+.ceo__info {
   background: #ffffff;
   color: #212529; }
-  .contact .logo, .contact__info .logo {
+  .contact .logo, .contact__info .logo,
+  .ceo__info .logo {
     width: 60%;
     max-width: 430px;
     height: auto;
     background: white;
     padding: 1em 0 1em 0; }
-  .contact .h5, .contact__info .h5 {
+  .contact .h5, .contact__info .h5,
+  .ceo__info .h5 {
     font-weight: bold; }
-  .contact h5, .contact__info h5 {
+  .contact h5, .contact__info h5,
+  .ceo__info h5 {
     color: #212529;
     font-size: 1.2rem;
     font-family: 'Karbon Thin', sans-serif;
@@ -247,23 +262,28 @@ body {
     transition: all .3s;
     line-height: 1.5;
     vertical-align: middle; }
-    .contact h5:hover, .contact__info h5:hover {
+    .contact h5:hover, .contact__info h5:hover,
+    .ceo__info h5:hover {
       text-shadow: 1px 1px 10px white;
       cursor: pointer; }
-  .contact i, .contact__info i {
+  .contact i, .contact__info i,
+  .ceo__info i {
     font-size: 1.6rem;
     vertical-align: middle;
     margin-right: 1rem;
     cursor: pointer; }
-  .contact a, .contact__info a {
+  .contact a, .contact__info a,
+  .ceo__info a {
     color: inherit;
     vertical-align: middle;
     text-decoration: none; }
-  .contact .icons i, .contact__info .icons i {
+  .contact .icons i, .contact__info .icons i,
+  .ceo__info .icons i {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
-    .contact .icons i:hover, .contact__info .icons i:hover {
+    .contact .icons i:hover, .contact__info .icons i:hover,
+    .ceo__info .icons i:hover {
       text-shadow: 1px 1px 10px white; }
 
 .googleMap {
@@ -322,13 +342,15 @@ body {
     -webkit-animation-delay: 2s;
     animation-delay: 2s; }
 
-.contact__intro {
+.contact__intro,
+.ceo__intro {
   background-image: url(552334bb83b50f1b9ed8211af3802683.jpg);
   height: 500px;
   position: relative;
   max-height: 100vh; }
   @media screen and (orientation: landscape) {
-    .contact__intro {
+    .contact__intro,
+    .ceo__intro {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -339,9 +361,11 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .contact__intro h2 {
+      .contact__intro h2,
+      .ceo__intro h2 {
         padding: 2rem; } }
-  .contact__intro .arrow-down {
+  .contact__intro .arrow-down,
+  .ceo__intro .arrow-down {
     position: absolute;
     left: 50%;
     bottom: -27px;
@@ -363,54 +387,67 @@ body {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
-    .contact__intro .arrow-down i {
+    .contact__intro .arrow-down i,
+    .ceo__intro .arrow-down i {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
-    .contact__intro .arrow-down:hover i {
+    .contact__intro .arrow-down:hover i,
+    .ceo__intro .arrow-down:hover i {
       -webkit-transform: scale(1.6);
       -ms-transform: scale(1.6);
       transform: scale(1.6);
       color: #0f7ca5; }
-  .contact__intro h2 {
+  .contact__intro h2,
+  .ceo__intro h2 {
     padding-top: 1em;
     word-spacing: 7px; }
 
-.contact__intro .intro__header h2 {
+.contact__intro .intro__header h2,
+.ceo__intro .intro__header h2 {
   font-size: 1em;
   text-transform: lowercase; }
-  .contact__intro .intro__header h2::first-letter {
+  .contact__intro .intro__header h2::first-letter,
+  .ceo__intro .intro__header h2::first-letter {
     text-transform: uppercase; }
   @media (max-width: 1000px) {
-    .contact__intro .intro__header h2 {
+    .contact__intro .intro__header h2,
+    .ceo__intro .intro__header h2 {
       font-size: 6vmin; } }
 
 .contact__info .h2,
-.contact__info .h3 {
+.contact__info .h3,
+.ceo__info .h2,
+.ceo__info .h3 {
   padding-bottom: 1rem;
   text-align: center;
   margin: 0 auto;
   display: block; }
 
-.contact__info .h2::after {
+.contact__info .h2::after,
+.ceo__info .h2::after {
   left: 50%;
   margin-left: -32.5px; }
 
-.contact__info .h2:hover::after {
+.contact__info .h2:hover::after,
+.ceo__info .h2:hover::after {
   left: 20%;
   width: 60%;
   margin-left: 0; }
   @media (max-width: 800px) {
-    .contact__info .h2:hover::after {
+    .contact__info .h2:hover::after,
+    .ceo__info .h2:hover::after {
       left: 0;
       width: 100%; } }
 
-.contact__info .h3 {
+.contact__info .h3,
+.ceo__info .h3 {
   font-size: 1.5em;
   margin-top: 2rem;
   font-family: 'Karbon Bold', sans-serif;
   margin-bottom: 4rem; }
-  .contact__info .h3 strong {
+  .contact__info .h3 strong,
+  .ceo__info .h3 strong {
     font-weight: bold; }
 
 .contact__form {
@@ -432,3 +469,10 @@ body {
       font-size: 1.2rem;
       margin-top: 9px;
       margin-left: 15px; }
+
+.ceo__intro {
+  background-image: url(10af3bd310ffdb16eba1def88f3291ed.jpg); }
+
+.ceo__info .ceo__photo {
+  width: 60%;
+  height: auto; }
