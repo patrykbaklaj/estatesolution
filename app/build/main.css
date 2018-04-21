@@ -232,6 +232,7 @@ body {
   color: #212529; }
   .contact .logo, .contact__info .logo {
     width: 60%;
+    max-width: 430px;
     height: auto;
     background: white;
     padding: 1em 0 1em 0; }
@@ -259,7 +260,6 @@ body {
     vertical-align: middle;
     text-decoration: none; }
   .contact .icons i, .contact__info .icons i {
-    padding-right: 2rem;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }

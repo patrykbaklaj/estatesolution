@@ -277,6 +277,7 @@ body {
 
     .logo {
         width: 60%;
+        max-width: 430px;
         height: auto;
         background: white;
         padding: 1em 0 1em 0;
@@ -319,7 +320,6 @@ body {
     .icons {
 
         i {
-            padding-right: 2rem;
             transition: all .3s;
 
 
