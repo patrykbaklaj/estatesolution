@@ -3,9 +3,16 @@ import Popper from "popper.js/dist/popper-utils.js";
 
 $(document).ready(function () {
 
+
+    if (window.location.href.indexOf('#') > 0) {;
+        $('body, html').stop().animate({
+            scrollTop: $(window.location.hash).offset().top - 80
+        }, 500)
+    }
+
     // handle menu
     $(window).on('scroll', () => {
-        if ($(window).scrollTop() >= 100) {
+        if ($(window).scrollTop() >= 90) {
             $('#nav').addClass('nav-white');
             $('#nav').addClass('box-shadow');
             $('#nav .navbar-brand img').attr('src', './app/assets/images/estatesolution-logo-small.png');
@@ -18,17 +25,26 @@ $(document).ready(function () {
             }
         };
     });
-    
+
     //handle dropdown
     $("#navbarDropdown").on("mouseenter", () => {
-        console.log("hoover");
         $(".dropdown-menu").stop().slideDown();
     });
-    
-        $("#navbarDropdown").on("mouseleave", () => {
-        console.log("leave");
+
+    $("#navbarDropdown").on("mouseleave", () => {
         $(".dropdown-menu").stop().slideUp();
     });
+
+    //    handle dropdown-click
+    $('.dropdown-item').on('click', function (event) {
+        var targetElement = $($(this)[0].hash);
+        if (targetElement.length > 5) {
+            $('body, html').stop().animate({
+                scrollTop: targetElement.offset().top - 80
+            }, 500, )
+        }
+    })
+
 
     // handle arrow TOP
     $('#arrow-top').on('click', () => {
@@ -39,7 +55,6 @@ $(document).ready(function () {
 
     //handle arrow Contact
     $('.arrow-down').on('click', () => {
-        console.log("first");
         $('body, html').stop().animate({
             scrollTop: $('.to-scroll').offset().top - 120
         }, 700)

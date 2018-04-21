@@ -132,7 +132,8 @@ body {
 .intro, .contact__intro,
 .ceo__intro,
 .aboutus__intro,
-.team__intro {
+.team__intro,
+.ourservices__intro {
   background-image: url(2534d2f3f47a70f565352c02fc7ca3ee.jpg);
   background-position: center top;
   background-repeat: no-repeat;
@@ -150,7 +151,8 @@ body {
     .intro, .contact__intro,
     .ceo__intro,
     .aboutus__intro,
-    .team__intro {
+    .team__intro,
+    .ourservices__intro {
       -webkit-box-align: end;
       -ms-flex-align: end;
       align-items: flex-end; } }
@@ -188,12 +190,14 @@ body {
 .about, .services, .contact, .contact__info,
 .ceo__info,
 .aboutus__info,
-.team__info {
+.team__info,
+.ourservices__info {
   padding: 6rem 0 5rem 0; }
   .about h2, .services h2, .contact h2, .contact__info h2,
   .ceo__info h2,
   .aboutus__info h2,
-  .team__info h2 {
+  .team__info h2,
+  .ourservices__info h2 {
     font-family: 'Karbon Bold', sans-serif;
     padding-bottom: .5rem;
     position: relative;
@@ -204,7 +208,8 @@ body {
     .about h2::after, .services h2::after, .contact h2::after, .contact__info h2::after,
     .ceo__info h2::after,
     .aboutus__info h2::after,
-    .team__info h2::after {
+    .team__info h2::after,
+    .ourservices__info h2::after {
       content: "";
       position: absolute;
       bottom: -8px;
@@ -218,12 +223,14 @@ body {
     .about h2:hover::after, .services h2:hover::after, .contact h2:hover::after, .contact__info h2:hover::after,
     .ceo__info h2:hover::after,
     .aboutus__info h2:hover::after,
-    .team__info h2:hover::after {
+    .team__info h2:hover::after,
+    .ourservices__info h2:hover::after {
       width: 110%; }
   .about p, .services p, .contact p, .contact__info p,
   .ceo__info p,
   .aboutus__info p,
-  .team__info p {
+  .team__info p,
+  .ourservices__info p {
     font-family: 'Karbon Thin', sans-serif;
     line-height: 1.8;
     margin-bottom: .7em;
@@ -231,7 +238,8 @@ body {
   .about img, .services img, .contact img, .contact__info img,
   .ceo__info img,
   .aboutus__info img,
-  .team__info img {
+  .team__info img,
+  .ourservices__info img {
     width: 100%;
     height: auto; }
 
@@ -257,13 +265,15 @@ body {
 .contact, .contact__info,
 .ceo__info,
 .aboutus__info,
-.team__info {
+.team__info,
+.ourservices__info {
   background: #ffffff;
   color: #212529; }
   .contact .logo, .contact__info .logo,
   .ceo__info .logo,
   .aboutus__info .logo,
-  .team__info .logo {
+  .team__info .logo,
+  .ourservices__info .logo {
     width: 60%;
     max-width: 430px;
     height: auto;
@@ -272,12 +282,14 @@ body {
   .contact .h5, .contact__info .h5,
   .ceo__info .h5,
   .aboutus__info .h5,
-  .team__info .h5 {
+  .team__info .h5,
+  .ourservices__info .h5 {
     font-weight: bold; }
   .contact h5, .contact__info h5,
   .ceo__info h5,
   .aboutus__info h5,
-  .team__info h5 {
+  .team__info h5,
+  .ourservices__info h5 {
     color: #212529;
     font-size: 1.2rem;
     font-family: 'Karbon Thin', sans-serif;
@@ -289,13 +301,15 @@ body {
     .contact h5:hover, .contact__info h5:hover,
     .ceo__info h5:hover,
     .aboutus__info h5:hover,
-    .team__info h5:hover {
+    .team__info h5:hover,
+    .ourservices__info h5:hover {
       text-shadow: 1px 1px 10px white;
       cursor: pointer; }
   .contact i, .contact__info i,
   .ceo__info i,
   .aboutus__info i,
-  .team__info i {
+  .team__info i,
+  .ourservices__info i {
     font-size: 1.6rem;
     vertical-align: middle;
     margin-right: 1rem;
@@ -303,21 +317,24 @@ body {
   .contact a, .contact__info a,
   .ceo__info a,
   .aboutus__info a,
-  .team__info a {
+  .team__info a,
+  .ourservices__info a {
     color: inherit;
     vertical-align: middle;
     text-decoration: none; }
   .contact .icons i, .contact__info .icons i,
   .ceo__info .icons i,
   .aboutus__info .icons i,
-  .team__info .icons i {
+  .team__info .icons i,
+  .ourservices__info .icons i {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
     .contact .icons i:hover, .contact__info .icons i:hover,
     .ceo__info .icons i:hover,
     .aboutus__info .icons i:hover,
-    .team__info .icons i:hover {
+    .team__info .icons i:hover,
+    .ourservices__info .icons i:hover {
       text-shadow: 1px 1px 10px white; }
 
 .googleMap {
@@ -379,7 +396,8 @@ body {
 .contact__intro,
 .ceo__intro,
 .aboutus__intro,
-.team__intro {
+.team__intro,
+.ourservices__intro {
   background-image: url(552334bb83b50f1b9ed8211af3802683.jpg);
   height: 500px;
   position: relative;
@@ -388,7 +406,8 @@ body {
     .contact__intro,
     .ceo__intro,
     .aboutus__intro,
-    .team__intro {
+    .team__intro,
+    .ourservices__intro {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -402,12 +421,14 @@ body {
       .contact__intro h2,
       .ceo__intro h2,
       .aboutus__intro h2,
-      .team__intro h2 {
+      .team__intro h2,
+      .ourservices__intro h2 {
         padding: 2rem; } }
   .contact__intro .arrow-down,
   .ceo__intro .arrow-down,
   .aboutus__intro .arrow-down,
-  .team__intro .arrow-down {
+  .team__intro .arrow-down,
+  .ourservices__intro .arrow-down {
     position: absolute;
     left: 50%;
     bottom: -27px;
@@ -432,14 +453,16 @@ body {
     .contact__intro .arrow-down i,
     .ceo__intro .arrow-down i,
     .aboutus__intro .arrow-down i,
-    .team__intro .arrow-down i {
+    .team__intro .arrow-down i,
+    .ourservices__intro .arrow-down i {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
     .contact__intro .arrow-down:hover i,
     .ceo__intro .arrow-down:hover i,
     .aboutus__intro .arrow-down:hover i,
-    .team__intro .arrow-down:hover i {
+    .team__intro .arrow-down:hover i,
+    .ourservices__intro .arrow-down:hover i {
       -webkit-transform: scale(1.6);
       -ms-transform: scale(1.6);
       transform: scale(1.6);
@@ -447,26 +470,30 @@ body {
   .contact__intro h2,
   .ceo__intro h2,
   .aboutus__intro h2,
-  .team__intro h2 {
+  .team__intro h2,
+  .ourservices__intro h2 {
     padding-top: 1em;
     word-spacing: 7px; }
 
 .contact__intro .intro__header h2,
 .ceo__intro .intro__header h2,
 .aboutus__intro .intro__header h2,
-.team__intro .intro__header h2 {
+.team__intro .intro__header h2,
+.ourservices__intro .intro__header h2 {
   font-size: 1em;
   text-transform: lowercase; }
   .contact__intro .intro__header h2::first-letter,
   .ceo__intro .intro__header h2::first-letter,
   .aboutus__intro .intro__header h2::first-letter,
-  .team__intro .intro__header h2::first-letter {
+  .team__intro .intro__header h2::first-letter,
+  .ourservices__intro .intro__header h2::first-letter {
     text-transform: uppercase; }
   @media (max-width: 1000px) {
     .contact__intro .intro__header h2,
     .ceo__intro .intro__header h2,
     .aboutus__intro .intro__header h2,
-    .team__intro .intro__header h2 {
+    .team__intro .intro__header h2,
+    .ourservices__intro .intro__header h2 {
       font-size: 6vmin; } }
 
 .contact__info .h2,
@@ -476,7 +503,9 @@ body {
 .aboutus__info .h2,
 .aboutus__info .h3,
 .team__info .h2,
-.team__info .h3 {
+.team__info .h3,
+.ourservices__info .h2,
+.ourservices__info .h3 {
   padding-bottom: 1rem;
   text-align: center;
   margin: 0 auto;
@@ -485,14 +514,16 @@ body {
 .contact__info .h2::after,
 .ceo__info .h2::after,
 .aboutus__info .h2::after,
-.team__info .h2::after {
+.team__info .h2::after,
+.ourservices__info .h2::after {
   left: 50%;
   margin-left: -32.5px; }
 
 .contact__info .h2:hover::after,
 .ceo__info .h2:hover::after,
 .aboutus__info .h2:hover::after,
-.team__info .h2:hover::after {
+.team__info .h2:hover::after,
+.ourservices__info .h2:hover::after {
   left: 20%;
   width: 60%;
   margin-left: 0; }
@@ -500,14 +531,16 @@ body {
     .contact__info .h2:hover::after,
     .ceo__info .h2:hover::after,
     .aboutus__info .h2:hover::after,
-    .team__info .h2:hover::after {
+    .team__info .h2:hover::after,
+    .ourservices__info .h2:hover::after {
       left: 0;
       width: 100%; } }
 
 .contact__info .h3,
 .ceo__info .h3,
 .aboutus__info .h3,
-.team__info .h3 {
+.team__info .h3,
+.ourservices__info .h3 {
   font-size: 1.5em;
   margin-top: 2rem;
   font-family: 'Karbon Bold', sans-serif;
@@ -515,7 +548,8 @@ body {
   .contact__info .h3 strong,
   .ceo__info .h3 strong,
   .aboutus__info .h3 strong,
-  .team__info .h3 strong {
+  .team__info .h3 strong,
+  .ourservices__info .h3 strong {
     font-weight: bold; }
 
 .contact__form {
@@ -554,7 +588,54 @@ body {
 
 .aboutus__intro {
   background-image: url(6925c18a6594b1efa6edb483beffe653.jpg);
-  background-position: bottom; }
+  background-position: center; }
 
 .team__intro {
+  background-position: center;
   background-image: url(2acbf19b4ab9592d73feb910f749400c.jpg); }
+
+.ourservices__intro {
+  background-position: center;
+  background-image: url(d6af0baab4a39f222c26a640043f4e15.jpg); }
+
+.ourservices__info h4,
+.ourservices__info li {
+  font-family: 'Karbon Thin', sans-serif; }
+
+.ourservices__info h4 {
+  margin: 1em 0;
+  font-weight: bold; }
+
+.ourservices__info ul {
+  padding-left: 2rem;
+  list-style: circle; }
+
+.ourservices__info li {
+  padding-left: 1em;
+  line-height: 1.5em; }
+
+.ourservices__info p {
+  font-size: 1.1rem; }
+
+.ourservices__info .h2,
+.ourservices__info .h3 {
+  text-align: left; }
+
+.ourservices__info .h3 {
+  margin-bottom: 2rem; }
+
+.ourservices__info .h2::after {
+  left: 0;
+  margin-left: 0; }
+
+.ourservices__info .h2:hover::after {
+  left: 0;
+  width: 60%;
+  margin-left: 0; }
+  @media (max-width: 800px) {
+    .ourservices__info .h2:hover::after {
+      left: 0;
+      width: 100%; } }
+
+.ourservices__info ul.inside {
+  list-style: disc; }

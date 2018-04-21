@@ -273,12 +273,6 @@ body {
     background: $contact-background;
     color: $contact-text;
 
-    h2 {
-        &::after {
-            //            background: white;
-        }
-    }
-
     .logo {
         width: 60%;
         max-width: 430px;
@@ -386,7 +380,8 @@ body {
 .contact__intro,
 .ceo__intro,
 .aboutus__intro,
-.team__intro {
+.team__intro,
+.ourservices__intro {
     @extend .intro;
 
     background-image: url('../assets/images/contact-4-70.jpg');
@@ -442,7 +437,8 @@ body {
 .contact__intro,
 .ceo__intro,
 .aboutus__intro,
-.team__intro {
+.team__intro,
+.ourservices__intro {
 
     .intro__header {
         h2 {
@@ -463,7 +459,8 @@ body {
 .contact__info,
 .ceo__info,
 .aboutus__info,
-.team__info {
+.team__info,
+.ourservices__info {
     @extend .contact;
 
     .h2,
@@ -557,9 +554,9 @@ body {
     background-image: url(../assets/images/zarzad-50.jpg);
 }
 
-.aboutus__info, 
+.aboutus__info,
 .team__info {
-    
+
     .h3 {
         margin-bottom: 1em;
     }
@@ -567,9 +564,78 @@ body {
 
 .aboutus__intro {
     background-image: url(../assets/images/aboutus.jpg);
-    background-position: bottom;
+    background-position: center;
 }
 
 .team__intro {
+    background-position: center;
     background-image: url(../assets/images/team.jpg);
+}
+
+.ourservices__intro {
+    background-position: center;
+    background-image: url(../assets/images/services.jpg);
+}
+
+.ourservices__info {
+    h4,
+    li {
+        font-family: 'Karbon Thin', sans-serif;
+    }
+
+    h4 {
+        margin: 1em 0;
+        font-weight: bold;
+    }
+
+
+    ul {
+        padding-left: 2rem;
+        list-style: circle;
+    }
+
+    li {
+        padding-left: 1em;
+        line-height: 1.5em;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .h2,
+    .h3 {
+        text-align: left;
+    }
+    
+    .h3 {
+        margin-bottom: 2rem;
+    }
+    
+    .h2 {
+
+        &::after {
+            left: 0;
+            margin-left: 0;
+
+        }
+
+        &:hover {
+            &::after {
+                left: 0;
+                width: 60%;
+                margin-left: 0;
+
+                @media (max-width: 800px) {
+                    left: 0;
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+    
+    ul.inside {
+        list-style: disc;
+    }
 }
