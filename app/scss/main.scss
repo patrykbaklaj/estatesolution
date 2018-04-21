@@ -385,7 +385,8 @@ body {
 
 .contact__intro,
 .ceo__intro,
-.aboutus__intro {
+.aboutus__intro,
+.team__intro {
     @extend .intro;
 
     background-image: url('../assets/images/contact-4-70.jpg');
@@ -440,7 +441,8 @@ body {
 
 .contact__intro,
 .ceo__intro,
-.aboutus__intro {
+.aboutus__intro,
+.team__intro {
 
     .intro__header {
         h2 {
@@ -460,7 +462,8 @@ body {
 
 .contact__info,
 .ceo__info,
-.aboutus__info {
+.aboutus__info,
+.team__info {
     @extend .contact;
 
     .h2,
@@ -554,7 +557,8 @@ body {
     background-image: url(../assets/images/zarzad-50.jpg);
 }
 
-.aboutus__info {
+.aboutus__info, 
+.team__info {
     
     .h3 {
         margin-bottom: 1em;
