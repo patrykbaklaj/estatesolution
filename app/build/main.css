@@ -551,3 +551,10 @@ body {
 .aboutus__info .h3,
 .team__info .h3 {
   margin-bottom: 1em; }
+
+.aboutus__intro {
+  background-image: url(6925c18a6594b1efa6edb483beffe653.jpg);
+  background-position: bottom; }
+
+.team__intro {
+  background-image: url(2acbf19b4ab9592d73feb910f749400c.jpg); }

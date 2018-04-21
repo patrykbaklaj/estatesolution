@@ -1,7 +1,6 @@
 import 'bootstrap';
 import Popper from "popper.js/dist/popper-utils.js";
 
-
 $(document).ready(function () {
 
     // handle menu
@@ -18,6 +17,17 @@ $(document).ready(function () {
                 $('#nav .navbar-brand img').attr('src', './app/assets/images/estatesolution-logo-small-white.png');
             }
         };
+    });
+    
+    //handle dropdown
+    $("#navbarDropdown").on("mouseenter", () => {
+        console.log("hoover");
+        $(".dropdown-menu").stop().slideDown();
+    });
+    
+        $("#navbarDropdown").on("mouseleave", () => {
+        console.log("leave");
+        $(".dropdown-menu").stop().slideUp();
     });
 
     // handle arrow TOP
