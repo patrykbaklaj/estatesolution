@@ -4,9 +4,9 @@ import Popper from "popper.js/dist/popper-utils.js";
 $(document).ready(function () {
 
 
-    if (window.location.href.indexOf('#') > 0) {;
+    if (window.location.href.indexOf('#') > 0) {
         $('body, html').stop().animate({
-            scrollTop: $(window.location.hash).offset().top - 80
+            scrollTop: $(window.location.hash).offset().top - 85
         }, 500)
     }
 
@@ -38,10 +38,11 @@ $(document).ready(function () {
     //    handle dropdown-click
     $('.dropdown-item').on('click', function (event) {
         var targetElement = $($(this)[0].hash);
-        if (targetElement.length > 5) {
+        if (window.location.href.indexOf('#') > 0) {
+            event.preventDefault();
             $('body, html').stop().animate({
-                scrollTop: targetElement.offset().top - 80
-            }, 500, )
+                scrollTop: targetElement.offset().top - 85
+            }, 500)
         }
     })
 
